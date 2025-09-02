@@ -3,7 +3,7 @@ name:  Github Actions Demo
 on: 
   repository_dispatch:
     #below is event name and it is used to trigger the workflow from outside and it can be any name 
-    types:[run_my_workflow] 
+    types:  [run_my_workflow] 
     
 jobs:
   Example-Action-job:
