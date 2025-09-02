@@ -10,4 +10,4 @@ jobs:
     name:  Exploring Actions
     runs-on: ubuntu-latest
     steps:
-      - run:  echo "Paylod from request is :{{ github.event.client_payload.myData }}"
+      - run:  echo "Paylod from request is :${{ github.event.client_payload.myData }}"
