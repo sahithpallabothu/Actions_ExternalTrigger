@@ -63,6 +63,7 @@ jobs:
     runs-on: ubuntu-latest
     
     needs: first-job
+    #the below if statement ensure the second job to run always even if the first job fails
     if: always()
     steps:
       - name: Sample step in job
