@@ -32,6 +32,7 @@ jobs:
       - name: Step that can be failed
         env:
           FAIL_STEP: ${{ github.event.inputs.failstep == 'yes' }}
+        # to evaluate expression inside run statement we used '[[ ]]' bash script syntax 
         run:  |
           echo "This statement runs whether step exits 0 or 1"
           if [[ $FAIL_STEP == true ]]
